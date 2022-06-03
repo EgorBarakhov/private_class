@@ -1,5 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+set -vx
 
-set -e
-
-bin/rspec
+bundle exec bin/rspec
